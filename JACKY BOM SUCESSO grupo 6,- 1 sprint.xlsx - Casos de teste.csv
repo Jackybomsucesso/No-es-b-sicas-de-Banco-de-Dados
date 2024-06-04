@@ -1,0 +1,41 @@
+ID,Nome do caso de teste,Pré-condição,Etapa,Descrição da etapa,Resultado esperado,Status,ID do bug
+CASO-1,Rolagem do mapa,Abra o site do Urban.Routes,1,Clique o mapa e role para cima e para baixo.,O mapa se move. Todos os objetos são renderizados conforme o design.,aprovado,
+CASO-2,Zoom no mapa,O site Urban.Routes não está aberto,1,Abra o site do Urban.Routes,O mapa corresponde ao design. O nível de zoom é adequado para visualizar a cidade.,"
+reprovado",Jackytest1
+,,,2,Clique no botão de mais (+).,O nível de zoom muda em um valor. Todos os objetos são renderizados conforme o design.,,
+CASO-3,Objetos não clicáveis,Abra o site do Urban.Routes,1,Clique no nome do local presente no mapa (exemplo: Hollywood).,Nada acontece. Os cabeçalhos de área não podem ser selecionados.,Reprovado,JACKYTESTECASO3
+,,,2,Clique no nome do local presente no mapa (exemplo: West Hollywood).,Nada acontece. Os cabeçalhos de área não podem ser selecionados.,,
+CASO-4,"Selecionar o campo ""De""",Abra o site do Urban.Routes,1,"Clique no campo ""De"".","O campo ""De"" é selecionado. O cursor pisca. O campo de pesquisa fica vazio.",Reprovado,Jackytest2
+CASO-5,Busca por objeto,Abra o site do Urban.Routes,1,"Clique no campo ""Para"".",O cursor pisca.,Reprovado,Jackytest3
+,,,2,"Digite ""Subway"".",A lista de estações de metrô é exibida.,,
+CASO-6,"Preenchimento do campo ""De""",Abra o site do Urban.Routes,1,"Clique no campo ""De"".","O campo ""De"" é selecionado. O cursor pisca. O campo de pesquisa fica vazio.",reprovado,Jackytest4
+,,"O campo ""De"" está vazio",2,"Insira um endereço (exemplo: East 2nd Street, 601).",O mapa recebe zoom no pino de endereço. A visualização corresponde à descrição do projeto.,,
+CASO-7,"Preenchimento do campo ""Para""",Abra o site do Urban.Routes,1,"Clique no campo ""Para"".","O campo ""Para"" é selecionado. O cursor pisca. O campo de pesquisa fica vazio.",reprovado,Jackytest5
+,,"O campo ""Para"" está vazio",2,Insira um endereço (exemplo: 1300 1st St).,O mapa recebe zoom no pino de endereço. A visualização corresponde à descrição do projeto.,,
+CASO-8,Limpar os campos,Abra o site do Urban.Routes,1,"Clique na cruz no campo ""De"".",O campo está vazio. O endereço inserido anteriormente é removido do campo.,Reprovado,Jackytest6
+,,"Os campos ""De"" e ""Para"" estão preenchidos",2,"Clique na cruz no campo ""Para"".",O campo está vazio. O endereço inserido anteriormente é removido do campo.,,
+CASO-9,Observar objetos 3D,Abra o site do Urban.Routes,1,"Amplie um objeto 3D (exemplo: Aeroporto Internacional de Los Angeles, LAX).",O objeto é mapeado como um objeto 3D.,Aprovado,
+CASO-10,Modo de visualização em tela cheia,Abra o site do Urban.Routes,1,Clique no botão de modo de visualização em tela cheia.,O modo de visualização em tela cheia é ativado e as abas do navegador são ocultadas. Todos os objetos da interface do mapa estão no lugar. O nível de zoom não muda.,Reprovado,Jackytest7
+,,O modo de visualização em tela cheia não está ativado,2,Clique no botão de modo de visualização em tela cheia.,O modo de visualização em tela cheia é desativado e as abas do navegador voltam a aparecer. Todos os objetos da interface do mapa estão no lugar. O nível de zoom não muda.,,
+CASO-11,Modo de renderização,Abra o site do Urban.Routes,1,Aproxime o cursor do botão do modo Mapa.,O botão mudou de cor. A opção Relevo está aberta na lista.,reprovado,Jackytest8
+,,,2a,Aproxime o cursor do botão do modo Relevo.,O botão mudou de cor.,,
+,,,3a,Clique no botão do modo Relevo.,O campo está preenchido. O mapa renderizado em modo Relevo corresponde ao design.,,
+,,,2b,Aproxime o cursor do botão do modo Satélite.,O botão mudou de cor. A opção Marcadores está aberta na lista.,,
+,,,3b,Clique no botão Satélite.,Mapa renderizado em modo satélite. A visualização não apresenta problemas perceptíveis. A cor do botão Satélite voltou.,,
+CASO-12,Renderização de objetos,Abra o site do Urban.Routes,1a,Dê zoom em um prédio.,O prédio é renderizado conforme o design.,Reprovado,Jackytest9
+,,,1b,"Aumente o zoom em uma estação de Metrô, LA (exemplo: Estação Central de Long Beach).",O ícone do metrô é exibido.,,
+,,,1c,Aumente o zoom em um ponto de referência (exemplo: Museu de Arte do Condado de Los Angeles).,O ícone do ponto de referência é exibido.,,
+,,,1d,Aumente o zoom em um parque da cidade (exemplo: Parque Natural Vista Hermosa).,O ícone do parque é exibido.,,
+CASO-13,Visualização de informações dos objetos,Abra o site do Urban.Routes,1,Clique em um lugar no mapa (exemplo: Estádio Dodger).,A exibição de informações (com informações do local) está aberta. A visualização corresponde ao design.,reprovado,Jackytest10
+,,,2,Clique na cruz na visualização de informações.,A visualização de informações está fechada. Não há artefatos no mapa.,,
+CASO-14,Modo street view,Abra o site do Urban.Routes. O modo street view não está ativado,1,Role o mapa para a área do Estádio Dodger.,A área do Estádio Dodger foi ampliada.,Aprovado,
+,,,2,Defina o nível máximo de zoom.,O nível de zoom está no máximo.,,
+,,,3,Clique 5 vezes no ícone de menos.,O nível de zoom muda.,,
+,,,4,Arraste o ícone do modo Street View e coloque-o em qualquer rua.,O modo Street View está ativado.,,
+,,,5,Role a imagem.,A imagem rola 360 graus.,,
+,,,6,Clique na pequena seta cinza localizada no retângulo preto (no canto superior esquerdo do mapa).,O modo Street View está desativado.,,
+CASO-15,Informações do aplicativo,Abra o site do Urban.Routes,1,Clique no logotipo do Urban.Routes.,A exibição de informações do aplicativo é exibida.,reprovado,Jackytest11
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,, 
